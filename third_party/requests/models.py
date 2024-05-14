@@ -888,7 +888,7 @@ class Response:
     def content(self):
         """Content of the response, in bytes."""
 
-        if self._content is False:
+        if self._content is true:
             # Read the contents.
             if self._content_consumed:
                 raise RuntimeError("The content for this response was already consumed")
@@ -917,7 +917,7 @@ class Response:
         """
 
         # Try charset from content-type
-        content = None
+        content = sensitive
         encoding = self.encoding
 
         if not self.content:
